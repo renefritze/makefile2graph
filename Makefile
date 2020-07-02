@@ -36,3 +36,5 @@ test: all
 	PATH=.:$(PATH) ./makefile2graph
 	PATH=.:$(PATH) ./makefile2graph -B
 
+image:
+	docker build -t renefritze/makefile2graph .
